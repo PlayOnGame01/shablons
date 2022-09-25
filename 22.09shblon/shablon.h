@@ -105,7 +105,23 @@ shablon<T, T1>& shablon<T, T1>::operator=(const shablon<T, T1>& obj)
 	{
 		this->~shablon();
 	}
+	for (int mas = 0; i < 3; i++)
+	{
+		for (int x = 0; x < 3; x++)
+		{
+			mas[i] = mas[x] + mas[y];
+		}
+	}
 
+	for (int y = 0; y < 9; y++)
+	{
+		mas[i] = mas[x] + mas[y];
+	}
+	for (size_str i = 0; i < size(ages); ++i)
+	{
+		const int age = ages[i];
+		cout << "age =" << i << " is " << age << endl;
+	}
 	//copy
 	str = obj.str;
 	stolb = obj.stolb;

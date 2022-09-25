@@ -24,7 +24,7 @@ public:
 		return y;
 	}
 };
-ostream& operator<<(ostream& os, const Point& obj)//  "Правильная"  перегрузка  :)
+ostream& operator<<(ostream& os, const Point& obj)//  "Правильная"  перегрузка
 {
 	os << obj.GetA() << endl;
 	os << obj.GetY() << endl;
@@ -54,7 +54,7 @@ public:
 	}*/
 
 };
-ostream& operator<<(ostream& os, const PointB& obj)  //  "Правильная"  перегрузка  :)
+ostream& operator<<(ostream& os, const PointB& obj)  //  "Правильная"  перегрузка
 {
 	os << obj.GetB() << endl;
 	return os;
@@ -92,14 +92,7 @@ public:
 
 int main()
 {
-	double sum, sum2;
-	//Matrix<int> obj1(3, 5);
-	//obj1.Random();
-	//obj1.Print();
-	//cout << "\n---------------------------------------\n";
-	//Matrix<int> b;
-	//b = obj1;
-	//b.Print();
+	double sum, sum2;	
 	Test<Point, PointB> obj1(Point(1, 2.4), PointB(7.9));
 	Test<Point, PointB> obj2(Point(2, 3.6), PointB(2.2));
 	shablon<Point, PointB> x(5, 5);
